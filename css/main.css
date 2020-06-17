@@ -104,6 +104,14 @@ textarea {
     list-style-type: none;
   }
    
+  img { 
+    width: 100%;
+  }
+  
+  figure {
+    margin: 0;
+  }
+
   a {
     color: #e2e3ed;
     text-decoration: none;
@@ -148,12 +156,22 @@ footer {
 
 }
 
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav {
@@ -175,6 +193,7 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.125em;
+
 }
 
 .header-divider {
@@ -183,6 +202,7 @@ header nav ul li {
   width: 100%;
   margin: 10px 0 20px 0;
 }
+
 
 footer .social-icons {
   display: flex;
@@ -211,6 +231,10 @@ footer p {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/girl-on-bridge.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -237,6 +261,9 @@ aside {
 /* Features */
 
 .features {
+  background-image: url('../img/features-background.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -255,11 +282,13 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
 }
 
 .features article {
   width: 63%;
   margin: 30px 0;
+
 }
 
 /* Reviews */
@@ -281,6 +310,14 @@ aside {
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+}
+
+article figure {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* ==========================================================================
@@ -497,6 +534,14 @@ h3 {
       display: none;
   }
 
+header figure {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
   /* Hero Area */
   .hero-area h1 {
     font-size: 3em;
@@ -537,6 +582,15 @@ h3 {
 
   .features .features-item-description {
       width: 50%;
+  }
+
+  article figure {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
   }
 
   /* Reviews */
@@ -658,6 +712,14 @@ h3 {
       font-size: 1.125em;
       line-height: 1.333;
   }
+
+header figure {
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
@@ -686,6 +748,9 @@ h3 {
 
   .features article {
     flex-basis: 33%;
+  }
+  article figure {
+    width: 38%;
   }
   
   /* Reviews */
