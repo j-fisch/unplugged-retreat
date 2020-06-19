@@ -144,6 +144,7 @@ textarea {
     width: 90%;
     margin: 50px 0;
   }
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
@@ -175,14 +176,14 @@ header figure {
 }
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav ul {
@@ -221,10 +222,18 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
+footer {
+  text-align: center;
+  flex-direction: column;
+}
+
 footer p {
   margin: 0;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -250,12 +259,11 @@ footer p {
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
-
 }
 
 /* Features */
@@ -301,6 +309,12 @@ aside {
 
 }
 
+.review-description {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -312,13 +326,6 @@ aside {
   margin: 20px 0;
 }
 
-article figure {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
 
 /* ==========================================================================
    About Page
@@ -345,6 +352,22 @@ article figure {
 .contact-content p {
   margin: 0;
 }
+
+.map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 80%; 
+    overflow: hidden;
+    position: relative;
+}
+
+  .map iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
 
 /* ==========================================================================
    FAQ Page
@@ -599,8 +622,12 @@ header figure {
     justify-content: space-between;
   }
   
-  .reviews article div {
-      width: 49%        
+  .reviews article figure, .reviews article div {
+    width: 49%;
+}
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -720,6 +747,10 @@ header figure {
     align-items: center;
     flex-flow: row wrap;
 }
+
+footer p {
+  font-size: 1.125em;
+}
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
@@ -756,10 +787,11 @@ header figure {
   /* Reviews */
 
   .reviews h2 {
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
+    font-size: 2.25em; 
   }
   
-  .reviews article div {
+  .reviews article {
     width: 42%;
   }
 
