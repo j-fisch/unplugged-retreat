@@ -831,11 +831,11 @@ footer p {
 }
 
 footer .contact {
-  padding-right: 180px;
+  padding-right: 150px;
 }
 
 footer .social {
-padding-left: 200px;
+padding-left: 150px;
 }
   /* Hero */
   .hero-area h1 {
@@ -894,7 +894,7 @@ padding-left: 200px;
 
   .mission h2,
   .contact-section .content-wrapper h2 {
-      width: 95%;
+      width: 90%;
       font-size: 3em;
   }
 
@@ -902,12 +902,8 @@ padding-left: 200px;
     font-size: 1.875em;
   }
 
-  .contact-section .content-wrapper {
-    padding-left: 25px;;
-  }
-
  .contact-info {
-  width: 45%;
+  width: 38%;
   }
   
 
