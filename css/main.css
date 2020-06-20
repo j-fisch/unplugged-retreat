@@ -236,6 +236,12 @@ footer .copyright {
   margin: 20px 0;
 }
 
+footer .social-icons i {
+  font-size: 1.875em;
+  color: #527158;
+  padding: 0 22px;
+}
+
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
@@ -303,7 +309,7 @@ aside {
 
 .features i {
 	font-size: 3.75em;
-        margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
